@@ -2,8 +2,8 @@ import React from 'react';
 import CounterContainer from './counter-redux'
 import './App.css';
 
-const App = () => (
-  <CounterContainer />
+const App = ({ store }) => (
+  <CounterContainer store={store} />
 )
 
 export default App;
