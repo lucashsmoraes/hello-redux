@@ -1,5 +1,5 @@
 import React from 'react';
-import CounterContainer from './counter/'
+import CounterContainer from './counter-redux'
 import './App.css';
 
 const App = () => (
