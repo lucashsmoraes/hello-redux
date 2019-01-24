@@ -1,9 +1,9 @@
 import React from 'react';
-import Counter from './counter/counter'
+import CounterContainer from './counter/'
 import './App.css';
 
 const App = () => (
-  <Counter />
+  <CounterContainer />
 )
 
 export default App;
