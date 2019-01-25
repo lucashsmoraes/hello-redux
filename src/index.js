@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStore } from 'redux'
 import { render } from 'react-dom'
+import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 import App from './App';
@@ -18,7 +19,9 @@ const store = createStore(counter)
 
 const renderApp = (NextApp) => {
     render(
-        <NextApp store={store} />,
+        <Provider store={store}>
+          <NextApp />
+        </Provider>,        
       document.querySelector('[data-js="App"]')
     )
   }
