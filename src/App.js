@@ -1,9 +1,9 @@
 import React from 'react';
-import Counter from './counter-2-redux'
+import Counters from './counters-redux'
 import './App.css';
 
 const App = () => (
-  <Counter />
+  <Counters />
 )
 
 export default App;
