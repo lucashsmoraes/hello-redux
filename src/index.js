@@ -2,16 +2,17 @@ import React from 'react';
 import { render } from 'react-dom'
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux'
-import './index.css';
+import { Provider } from 'react-redux'
 import reducer from './redux-flow/reducers/todos'
 import App from './App';
 
 const store = createStore(reducer)
-console.log(store)
 
 const renderApp = (NextApp) => {
     render(
-          <NextApp />,    
+      <Provider store={store}>
+        <NextApp />
+      </Provider>,    
       document.querySelector('[data-js="App"]')
     )
   }
