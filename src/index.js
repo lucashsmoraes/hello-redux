@@ -1,9 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom'
 import * as serviceWorker from './serviceWorker';
+import { createStore } from 'redux'
 import './index.css';
+import reducer from './redux-flow/reducers/todos'
 import App from './App';
 
+const store = createStore(reducer)
+console.log(store)
 
 const renderApp = (NextApp) => {
     render(
